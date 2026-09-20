@@ -24,7 +24,7 @@ def generate_logs(num_flights = 1000, max_time = 120):
 
             # drift conditional on visual feature density
             if visual_feature_density > 0.6:
-                NAV_MODE = "VISUAL_NAV"
+                NAV_MODE = "VIO"
                 drift_error = baseline_noise * t * 0.1
             else:
                 NAV_MODE = "IMU_ONLY"
